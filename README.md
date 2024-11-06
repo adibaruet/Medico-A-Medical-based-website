@@ -1,7 +1,8 @@
 # Medico - A Complete Medical Website
 
-![Medico](![image](Downloads/medico.jpeg)
-) <!-- Add an image if you have one -->
+
+![MEDICO](./Downloads/medico.jpeg)
+
 
 Medico is a full-featured medical website designed to streamline healthcare services. It allows patients to manage appointments, access medical resources, and contact doctors easily. Built with a focus on user experience, Medico provides a secure, efficient, and user-friendly platform for medical needs.
 
