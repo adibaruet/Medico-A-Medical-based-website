@@ -118,8 +118,6 @@ All screenshots below are from the project presentation, shown in order.
 
 ### Overview
 
-**Title**
-![Title](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-01.png)
 
 **Account Access**
 ![Account Access](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-02.png)
@@ -127,8 +125,6 @@ All screenshots below are from the project presentation, shown in order.
 **Security Verification**
 ![Security Verification](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-03.png)
 
-**A Glimpse of Medico**
-![A Glimpse of Medico](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-04.png)
 
 ### Website Preview
 
