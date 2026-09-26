@@ -193,12 +193,7 @@ All screenshots below are from the project presentation, shown in order.
 📽️ View the complete project presentation on Google Slides:
 [Medico — Presentation Deck](https://docs.google.com/presentation/d/19bOJ2VLaMZB4hVcXtLGbu9zAiPFimKAy/edit?usp=sharing&ouid=102604923143769449495&rtpof=true&sd=true)
 
-## Full Presentation
 
-📽️ View the complete project presentation on Google Slides:
-[Medico Presentation Deck](https://docs.google.com/presentation/d/19bOJ2VLaMZB4hVcXtLGbu9zAiPFimKAy/edit?usp=sharing&ouid=102604923143769449495&rtpof=true&sd=true)
-
----
 
 ## Contributing
 
