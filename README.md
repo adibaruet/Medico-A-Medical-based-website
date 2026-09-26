@@ -44,75 +44,83 @@ Medico is a full-featured medical website designed to streamline healthcare serv
 
 ## Screenshots
 
-All screenshots below are from the project presentation. Click any image to view it full-size.
+All screenshots below are from the project presentation, shown in order.
 
 ### Overview
 
-<table>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-1.png" width="400"/><br/><b>Title</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-2.png" width="400"/><br/><b>Account Access</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-3.png" width="400"/><br/><b>Security Verification</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-4.png" width="400"/><br/><b>A Glimpse of Medico</b></td>
-</tr>
-</table>
+**Title**
+![Title](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-01.png)
+
+**Account Access**
+![Account Access](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-02.png)
+
+**Security Verification**
+![Security Verification](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-03.png)
+
+**A Glimpse of Medico**
+![A Glimpse of Medico](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-04.png)
 
 ### Website Preview
 
-<table>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-5.png" width="270"/><br/><b>Homepage</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-6.png" width="270"/><br/><b>Our Services</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-7.png" width="270"/><br/><b>Healthcare Providers</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-8.png" width="270"/><br/><b>Patient Testimonials</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-9.png" width="270"/><br/><b>Latest Articles</b></td>
-<td></td>
-</tr>
-</table>
+**Homepage**
+![Homepage](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-05.png)
+
+**Our Services**
+![Our Services](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-06.png)
+
+**Healthcare Providers**
+![Healthcare Providers](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-07.png)
+
+**Patient Testimonials**
+![Patient Testimonials](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-08.png)
+
+**Latest Articles**
+![Latest Articles](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-09.png)
 
 ### Admin Panel
 
-<table>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-10.png" width="270"/><br/><b>Admin Permissions</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-11.png" width="270"/><br/><b>Dashboard</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-12.png" width="270"/><br/><b>Schedule Manager</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-13.png" width="270"/><br/><b>Appointment Manager</b></td>
-<td></td>
-<td></td>
-</tr>
-</table>
+**Admin Permissions**
+![Admin Permissions](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-10.png)
+
+**Dashboard**
+![Admin Dashboard](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-11.png)
+
+**Schedule Manager**
+![Schedule Manager](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-12.png)
+
+**Appointment Manager**
+![Appointment Manager](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-13.png)
 
 ### Doctor Panel
 
-<table>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-14.png" width="270"/><br/><b>Doctor Permissions</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-15.png" width="270"/><br/><b>Dashboard</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-16.png" width="270"/><br/><b>My Appointments</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-17.png" width="270"/><br/><b>My Sessions</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-18.png" width="270"/><br/><b>My Patients</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-19.png" width="270"/><br/><b>Settings</b></td>
-</tr>
-</table>
+**Doctor Permissions**
+![Doctor Permissions](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-14.png)
+
+**Dashboard**
+![Doctor Dashboard](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-15.png)
+
+**My Appointments**
+![My Appointments](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-16.png)
+
+**My Sessions**
+![My Sessions](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-17.png)
+
+**My Patients**
+![My Patients](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-18.png)
+
+**Settings**
+![Settings](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-19.png)
 
 ### Booking Flow
 
-<table>
-<tr>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-20.png" width="270"/><br/><b>Booking an Appointment</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-21.png" width="270"/><br/><b>Schedule & Book a Session</b></td>
-<td align="center"><img src="https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-22.png" width="270"/><br/><b>Booking Confirmation</b></td>
-</tr>
-</table>
+**Booking an Appointment**
+![Booking an Appointment](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-20.png)
+
+**Schedule & Book a Session**
+![Schedule & Book a Session](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-21.png)
+
+**Booking Confirmation**
+![Booking Confirmation](https://raw.githubusercontent.com/adibaruet/Medico-A-Medical-based-website/main/Images/Medico_Presentation.pptx-22.png)
 
 ## Full Presentation
 
