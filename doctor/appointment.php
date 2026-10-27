@@ -21,7 +21,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+    
 
     session_start();
 
@@ -513,7 +513,7 @@
                         <h2></h2>
                         <a class="close" href="doctors.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            Medico Web App<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">

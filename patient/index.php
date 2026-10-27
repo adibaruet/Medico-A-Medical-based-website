@@ -183,8 +183,7 @@
                                         
                                     };
     
-                                echo ' </datalist>';
-    ?>
+                                echo ' </datalist>';?>
                                 
                            
                                 <input type="Submit" value="Search" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">

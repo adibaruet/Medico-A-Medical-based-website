@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        
+          background-image: url('images/hero-bg.png');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          background-position: center; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .confirmation-container {
+            max-width: 600px;
+            width: 400px;
+            margin: 0 0;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .confirmation-message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #0a7d6f;
+        }
+
+        .back-to-home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #F1F0FE;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-home-button:hover {
+            background-color: #0ecbec;
+            color: #fff;
+            background-image: url('images/hero-bg.png');
+        }
+        .container-image img {
+            height: 100px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="container-image">
+            <img src="favicon.png" alt="app-logo">
+        </div>
+        <div class="confirmation-message">
+            Check Your Mail to Change Password!
+        </div>
+        <a href="index.html" class="back-to-home-button">Back to Home</a>
+    </div>
+</body>
+</html>

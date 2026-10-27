@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +9,22 @@
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/signup.css">
         
-    <title>Sign Up</title>
-    
+    <title>Create Account</title>
+    <style>
+        .container{
+            animation: transitionIn-X 0.5s;
+        }
+    </style>
 </head>
 <body>
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
 
 
 session_start();
@@ -28,26 +39,94 @@ $date = date('Y-m-d');
 $_SESSION["date"]=$date;
 
 
+//import database
+include("connection.php");
+
+
+
+
 
 if($_POST){
+
+    $result= $database->query("select * from webuser");
+
+    $fname=$_POST['fname'];
+    $lname=$_POST['lname'];
+    $name=$fname." ".$lname;
+    
+    $email=$_POST['newemail'];
+    $newpassword=$_POST['newpassword'];
+    $cpassword=$_POST['cpassword'];
+    
+    if ($newpassword==$cpassword){
+        $sqlmain= "select * from webuser where email=?;";
+        $stmt = $database->prepare($sqlmain);
+        $stmt->bind_param("s",$email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if($result->num_rows==1){
+            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Already have an account for this Email address.</label>';
+        }else{
+            //TODO
+            $randomNumber = rand(1000, 9999);
+            $database->query("insert into patient(pemail,pname,ppassword,otp) values('$email','$name','$newpassword','$randomNumber');");
+            $database->query("insert into webuser values('$email','p')");
+
+            //print_r("insert into patient values($pid,'$email','$fname','$lname','$newpassword','$address','$nic','$dob','$tele');");
+            $_SESSION["user"]=$email;
+            $_SESSION["usertype"]="p";
+            $_SESSION["username"]=$fname;
+            //Import PHPMailer classes into the global namespace
+            //These must be at the top of your script, not inside a function
+            
+            //Create an instance; passing `true` enables exceptions
+            $mail = new PHPMailer(true);
+            
+            try {
+                //Server settings
+                $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+                $mail->isSMTP();                                            //Send using SMTP
+                $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+                $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+                $mail->Username   = 'humairatadiba@gmail.com';                     //SMTP username
+                $mail->Password   = 'ilrheicyquozsjmr';                               //SMTP password
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+                $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            
+                $mail_address = $email;
+            
+                //Recipients
+                $mail->setFrom('humairatadiba@gmail.com', 'Medico');
+                $mail->addAddress($mail_address);     //Add a recipient             //Name is optional
+            
+                // //Attachments        //Add attachments
+                // $mail->addAttachment('assets/images/ruet.png', 'ruet.png');    //Optional name
+            
+                //Content
+                $mail->isHTML(true);                                  //Set email format to HTML
+                $mail->Subject = 'Thanks for registering';
+                $mail->Body    = 'your OTP is '.$randomNumber;
+                // $mail->AltBody = '';
+            
+                $mail->send();
+                echo 'Message has been sent';
+            } catch (Exception $e) {
+                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            }
+            header('Location: otp.php?email=' . $email);
+            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;"></label>';
+        }
+        
+    }else{
+        $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Password Conformation Error! Reconform Password</label>';
+    }
+
+
 
     
-
-    $_SESSION["personal"]=array(
-        'fname'=>$_POST['fname'],
-        'lname'=>$_POST['lname'],
-        'address'=>$_POST['address'],
-        'nic'=>$_POST['nic'],
-        'dob'=>$_POST['dob']
-    );
-
-
-    print_r($_SESSION["personal"]);
-    header("location: create-account.php");
-
-
-
-
+}else{
+    //header('location: signup.php');
+    $error='<label for="promter" class="form-label"></label>';
 }
 
 ?>
@@ -55,20 +134,19 @@ if($_POST){
 
     <center>
     <div class="container">
-        <table border="0">
+        <table border="0" style="width: 69%;">
             <tr>
                 <td colspan="2">
                     <p class="header-text">Let's Get Started</p>
-                    <p class="sub-text">Add Your Personal Details to Continue</p>
+                    <p class="sub-text">It's Okey, Now Create User Account.</p>
                 </td>
             </tr>
             <tr>
-                <form action="" method="POST" >
+            <form action="" method="POST" >
                 <td class="label-td" colspan="2">
                     <label for="name" class="form-label">Name: </label>
                 </td>
             </tr>
-            <tr>
                 <td class="label-td">
                     <input type="text" name="fname" class="input-text" placeholder="First Name" required>
                 </td>
@@ -77,33 +155,55 @@ if($_POST){
                 </td>
             </tr>
             <tr>
+                <form action="" method="POST" >
                 <td class="label-td" colspan="2">
-                    <label for="address" class="form-label">Address: </label>
+                    <label for="newemail" class="form-label">Email: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="text" name="address" class="input-text" placeholder="Address" required>
+                    <input type="email" name="newemail" class="input-text" placeholder="Email Address" required>
+                </td>
+                
+            </tr>
+       
+         
+            <tr>
+                <td class="label-td" colspan="2">
+                    <label for="newpassword" class="form-label">Create New Password: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="nic" class="form-label">NID: </label>
+                    <input type="password" name="newpassword" class="input-text" placeholder="New Password" required>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="text" name="nic" class="input-text" placeholder="NID Number" required>
+                    <label for="cpassword" class="form-label">Confirm Password: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="dob" class="form-label">Date of Birth: </label>
+                    <input type="password" name="cpassword" class="input-text" placeholder="Confirm Password" required>
                 </td>
             </tr>
+     
+            <tr>
+                
+                <td colspan="2">
+                    <?php echo $error ?>
+
+                </td>
+            </tr>
+          
+
+                    </form>
+            </tr>
+
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="date" name="dob" class="input-text" required>
+                    
                 </td>
             </tr>
             <tr>
@@ -116,7 +216,8 @@ if($_POST){
                     <input type="reset" value="Reset" class="login-btn btn-primary-soft btn" >
                 </td>
                 <td>
-                    <input type="submit" value="Next" class="login-btn btn-primary btn">
+                    <input type="submit" value="Sign Up" class="login-btn btn-primary btn">
+                    
                 </td>
 
             </tr>
@@ -136,4 +237,4 @@ if($_POST){
     </div>
 </center>
 </body>
-</html>
+</html> -->

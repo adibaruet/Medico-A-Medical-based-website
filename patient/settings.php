@@ -44,16 +44,20 @@
     }
     
 
-    //import database
-    include("../connection.php");
-    $sqlmain= "select * from patient where pemail=?";
-    $stmt = $database->prepare($sqlmain);
-    $stmt->bind_param("s",$useremail);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $userfetch=$userrow->fetch_assoc();
-    $userid= $userfetch["pid"];
-    $username=$userfetch["pname"];
+  // Import database
+include("../connection.php");
+
+$sqlmain = "SELECT * FROM patient WHERE pemail = ?";
+$stmt = $database->prepare($sqlmain);
+$stmt->bind_param("s", $useremail);
+$stmt->execute();
+$result = $stmt->get_result();
+
+// Fetch the result properly
+$userfetch = $result->fetch_assoc(); // Changed $userrow to $result
+$userid = $userfetch["pid"];
+$username = $userfetch["pname"];
+
 
     ?>
     <div class="container">
@@ -286,7 +290,7 @@
                         <h2></h2>
                         <a class="close" href="settings.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            MEDICO<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
